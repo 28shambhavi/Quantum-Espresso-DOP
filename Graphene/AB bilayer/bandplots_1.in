@@ -1,7 +1,7 @@
 &bands
     prefix='graphene',
-    outdir= '../tmp',
-    filband = 'grbands.dat',
+    outdir='../tmp',
+    filband = 'grbands_1.dat',
     lsym=.true.
 /
 
