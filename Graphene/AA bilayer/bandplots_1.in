@@ -1,6 +1,6 @@
 &bands
     prefix='graphene',
-    outdir='/home/shivani/Downloads/gr2/tmp',
+    outdir= '../tmp',
     filband = 'grbands.dat',
     lsym=.true.
 /
