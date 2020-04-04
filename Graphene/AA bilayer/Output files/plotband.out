@@ -1,0 +1,8 @@
+Input file > Reading   32 bands at    151 k-points
+Range:  -20.0170   24.8670eV  Emin, Emax > high-symmetry point: -0.3333 0.5774 0.0000   x coordinate   0.0000
+high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.6667
+high-symmetry point:  0.0000 0.5774 0.0000   x coordinate   1.2440
+high-symmetry point: -0.0067 0.5774 0.0000   x coordinate   1.2507
+high-symmetry point: -0.3333 0.5774 0.0000   x coordinate   1.5773
+output file (xmgr) > bands in xmgr format written to file grbands.xmgr                                                                                                                                                                                                                                                    
+output file (ps) > Efermi > deltaE, reference E (for tics) bands in PostScript format written to file grbands.ps                                                                                                                                                                                                                                                      
