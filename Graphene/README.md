@@ -1,3 +1,6 @@
+Following are the commands for the various calculations for AA bilayer. 
+
+
 Command for running the scf calculation:
     pw.x < gr_scf.in > gr_scf.out
 
