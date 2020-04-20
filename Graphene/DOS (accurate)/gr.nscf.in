@@ -1,0 +1,45 @@
+&CONTROL
+calculation='nscf'
+title='graphene'
+prefix='gra.dos1'
+verbosity='high'
+restart_mode='from_scratch'
+nstep=1000
+iprint=1
+tprnfor=.true.
+outdir='../tmp'
+wf_collect=.true.
+disk_io='default'
+pseudo_dir='../pseudo'
+tstress=.true.
+/
+&SYSTEM
+ibrav = 12,
+a = 2.4674,
+b = 2.4674,
+c= 20.000,
+cosab=-0.500000,
+nat = 4,
+ntyp = 1,
+ecutwfc = 40.0 ,
+ecutrho = 400.0 ,
+nbnd = 8 ,
+input_DFT = 'PBE' ,
+occupations = 'tetrahedra' ,
+/
+&ELECTRONS
+electron_maxstep = 100,
+conv_thr = 1.0d-10 ,
+mixing_mode = 'plain' ,
+mixing_beta = 0.3d0 ,
+/
+ATOMIC_SPECIES
+C 12.011 C.pbe-rrkjus.UPF
+ATOMIC_POSITIONS angstrom
+C 0.000000000 0.000000000 5.000000000
+C 0.000000000 1.424500000 5.000000000
+C 0.000000000 2.849000000 8.230000000
+C 0.000000000 1.424500000 8.230000000
+K_POINTS automatic
+96 96 1 0 0 0
+
