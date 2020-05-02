@@ -1,0 +1,48 @@
+&CONTROL
+calculation='scf'
+title='graphene'
+prefix='g.dos1'
+verbosity='high'
+restart_mode='from_scratch'
+nstep=1000
+iprint=1
+tprnfor=.true.
+outdir='../tmp'
+wf_collect=.true.
+disk_io='default'
+pseudo_dir='../pseudo'
+tstress=.true.
+/
+&SYSTEM
+ibrav = 12,
+a = 2.4674,
+b = 2.4674,
+c= 20.000,
+cosab=-0.500000,
+nat = 4,
+ntyp = 1,
+nspin=2,
+nbnd=16,
+starting_magnetization(1)=-0.5
+ecutwfc = 40.0 ,
+ecutrho = 400.0 ,
+input_DFT = 'PBE' ,
+occupations = 'smearing' ,
+degauss = 1.0d-4 ,
+smearing = 'marzari-vanderbilt' ,
+/
+&ELECTRONS
+electron_maxstep = 100,
+conv_thr = 1.0d-10 ,
+mixing_mode = 'plain' ,
+mixing_beta = 0.3d0 ,
+/
+ATOMIC_SPECIES
+C 12.011 C.pbe-rrkjus.UPF
+ATOMIC_POSITIONS angstrom
+C 0.000000000 0.000000000 5.000000000
+C 0.000000000 1.424500000 5.000000000
+C 0.400000000 0.000000000 8.480000000
+C 0.400000000 1.424500000 8.480000000
+K_POINTS automatic
+12 12 1 0 0 0
