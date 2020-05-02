@@ -1,0 +1,9 @@
+&projwfc
+prefix='g.dos1'
+outdir='../tmp'
+ngauss=0
+degauss=0.01
+Emin=-20.0, Emax=20.0, DeltaE=0.1
+filproj='gra.proj.dos'
+filpdos='graphene.pbe.pdos'
+/
