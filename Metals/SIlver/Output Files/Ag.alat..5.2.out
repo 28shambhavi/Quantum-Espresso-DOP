@@ -1,0 +1,163 @@
+
+     Program PWSCF v.5.1 starts on 30Apr2020 at  6:53:51 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum           1       1      1                    1        1       1
+
+
+
+     bravais-lattice index     =            3
+     lattice parameter (alat)  =       0.5000  a.u.
+     unit-cell volume          =       0.0625 (a.u.)^3
+     number of atoms/cell      =            1
+     number of atomic types    =            1
+     number of electrons       =        11.00
+     number of Kohn-Sham states=           10
+     kinetic-energy cutoff     =      30.0000  Ry
+     charge density cutoff     =     120.0000  Ry
+     convergence threshold     =      1.0E-06
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation      = PBE ( 1  4  3  4 0)
+
+     celldm(1)=   0.500000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   0.500000   0.500000   0.500000 )  
+               a(2) = (  -0.500000   0.500000   0.500000 )  
+               a(3) = (  -0.500000  -0.500000   0.500000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  1.000000 )  
+               b(2) = ( -1.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000 -1.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Ag read from file:
+     ../pseudo/Ag.pbe-n-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: d841cbfac2b0861aec33b46768a516bf
+     Pseudo is Ultrasoft + core correction, Zval = 11.0
+     Generated using "atomic" code by A. Dal Corso  v.6.2.2
+     Using radial grid of 1237 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Ag            11.00   107.86000     Ag( 1.00)
+
+     48 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Ag  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+
+     number of k points=    14  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.1666667), wk =   0.0555556
+        k(    2) = (   0.0000000  -0.1666667   0.3333333), wk =   0.2222222
+        k(    3) = (   0.0000000  -0.3333333   0.5000000), wk =   0.2222222
+        k(    4) = (  -0.1666667   0.1666667   0.1666667), wk =   0.0740741
+        k(    5) = (  -0.1666667  -0.1666667   0.5000000), wk =   0.2222222
+        k(    6) = (  -0.1666667   0.6666667  -0.3333333), wk =   0.2222222
+        k(    7) = (  -0.3333333   0.3333333   0.1666667), wk =   0.2222222
+        k(    8) = (   0.5000000  -0.5000000   0.1666667), wk =   0.1111111
+        k(    9) = (   0.5000000  -0.6666667   0.3333333), wk =   0.2222222
+        k(   10) = (   0.0000000   0.0000000   0.5000000), wk =   0.0555556
+        k(   11) = (   0.0000000  -0.1666667   0.6666667), wk =   0.2222222
+        k(   12) = (  -0.1666667   0.8333333  -0.1666667), wk =   0.0740741
+        k(   13) = (   0.5000000  -0.5000000   0.5000000), wk =   0.0185185
+        k(   14) = (   0.0000000   0.0000000   0.8333333), wk =   0.0555556
+
+     Dense  grid:        1 G-vectors     FFT dimensions: (   1,   1,   1)
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Kohn-Sham Wavefunctions         0.00 Mb     (       1,   10)
+        NL pseudopotentials             0.00 Mb     (       1,   18)
+        Each V/rho on FFT grid          0.00 Mb     (       1)
+        Each G-vector array             0.00 Mb     (       1)
+        G-vector shells                 0.00 Mb     (       1)
+     Largest temporary arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions         0.00 Mb     (       1,   40)
+        Each subspace H/S matrix        0.02 Mb     (      40,   40)
+        Each <psi_i|beta_j> matrix      0.00 Mb     (      18,   10)
+        Arrays for rho mixing           0.00 Mb     (       1,    8)
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+     Message from routine gk_sort:
+     unexpected exit from do-loop
+
+     Initial potential from superposition of free atoms
+
+     starting charge   10.99960, renormalised to   11.00000
+     Starting wfc are    9 randomized atomic wfcs +    1 random wfc
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine cdiaghg (13):
+     S matrix not positive definite
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD 
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
