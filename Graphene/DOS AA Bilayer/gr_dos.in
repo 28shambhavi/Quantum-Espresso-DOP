@@ -1,0 +1,9 @@
+&projwfc
+prefix='gra.spin'
+outdir='../tmp'
+ngauss=0
+degauss=0.01
+Emin=-20.0, Emax=10, DeltaE=0.005
+filproj='gra.proj.dos'
+filpdos='graphene.pbe.pdos'
+/
