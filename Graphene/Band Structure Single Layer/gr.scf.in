@@ -1,0 +1,26 @@
+&control
+    calculation='scf',
+    prefix='Graphene_1x1_PBE',
+    pseudo_dir = '../pseudo/',        
+    outdir='../tmp',
+/
+ &system
+    ibrav= 0, celldm(1) =4.6542890, celldm(3)=3.0, nat= 2, ntyp= 1,
+    ecutwfc =20, ecutrho =200, 
+    occupations='smearing', smearing='gaussian', degauss=0.01,
+ /
+ &electrons
+    conv_thr = 1.0d-8
+ /
+ATOMIC_SPECIES
+C  12.0107 C.pbe-rrkjus.UPF
+CELL_PARAMETERS (alat= 4.64872629)
+1.002996671 -0.000000000 0.000000000
+-0.501498335 0.868620597 0.000000000
+0.000000000 0.000000000 8.130081301
+
+ATOMIC_POSITIONS (crystal)
+C    0.000000    0.000000    0.25000000
+C    0.333333    0.666667    0.25000000
+K_POINTS {automatic}
+12 12 1 0 0 0
