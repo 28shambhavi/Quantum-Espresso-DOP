@@ -1,0 +1,7 @@
+ &DOS
+    prefix  = 'Al_exc2'
+    Emin = -5.00, Emax = 30.00
+    DeltaE = 0.01,
+    fildos = 'Al.dos.dat'
+    outdir = './tmp/'
+/
