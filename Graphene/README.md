@@ -13,6 +13,7 @@ C 0.000000000 1.424500000 5.000000000
 
 
 
+
 SETTING UP THE INPUT FILE for BILAYER: The rule for K points remains valid here as well. 
 An example of the Atmic positions for AA Bilayer has been given below:
 
@@ -23,6 +24,7 @@ C 0.000000000 0.000000000 8.520000000
 C 0.000000000 1.424500000 8.520000000
 
 Now, instead of just two carbon atoms we specify the atomic positions for 4 of them.
+
 
 
 
@@ -43,14 +45,15 @@ Plotting the band:                              plotband.x <plotband.in > plotba
     
 
 
+
 DOS CALCULATION:
-Firstly, run an scf calculation just like in the above calculation. Then, for doing nscf calculation we use the pw.x library to launch. The only change in the input file that occurs here is the change of parameters: calculation='nscf' and occupations = 'tetrahedra' 
+Firstly, run an scf calculation just like in the above calculation. Then, for doing nscf calculation we use the pw.x library to launch. The only change in the input file that occurs here is the change of parameters: calculation='nscf' and occupations = 'tetrahedra' :
+
 
 pw.x<gr.nscf.in>g_nscf.out
 
-For calculation of DOS we use the projwfc.x library to launch the input file.           
 
-projwfc.x<g_dos.in>gr.dos.out
+For calculation of DOS we use the projwfc.x library to launch the input file:   projwfc.x<g_dos.in>gr.dos.out
 
 
 Now we take the values from the output file: "graphene.pbe.pdos.pdos_tot" and plot in a suitable graph plotting software. Eg: Xmgrace
