@@ -12,7 +12,7 @@ scf, non-scf, bandstructure
 scf, non-scf, bandstructure for both aa and ab type, as well as a case of sliding two AA bilayers above one another. DOS graphs for the bilayer have also been computed. 
 
 --------------------------------------------------------
-# A BRIEF INTRODUCTION TO QUANTUM ESPRESSO AND ITS METHODS USED IN THIS STUDY:
+# A Brief intro to Quantum Espresso and the methods used in this study:
 Each of the input parameters have meanings that need to be considered. It is important to understand these as they decide if a particular computation goes write or wrong.
 
 Any of the sections that have an ampersand are described in the literature as ”cards” and the rest are simple parameter specifications. 
